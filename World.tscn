@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://KinematicBody2D.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
+<<<<<<< HEAD
 
 custom_solver_bias = 0.0
 extents = Vector2( 32, 32 )
@@ -22,8 +23,17 @@ input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
+=======
+extents = Vector2( 32, 32 )
+
+[node name="World" type="Node"]
+
+[node name="Playa Playa" type="KinematicBody2D" parent="."]
+position = Vector2( 544, 224 )
+>>>>>>> ab92a1f0515c7e821623392d4acad7e2e0eae83d
 script = ExtResource( 1 )
 
+<<<<<<< HEAD
 [node name="Sprite" type="Sprite" parent="Playa Playa" index="0"]
 
 texture = ExtResource( 2 )
@@ -504,3 +514,11 @@ visible = false
 shape = SubResource( 2 )
 
 
+=======
+[node name="Sprite" type="Sprite" parent="Playa Playa"]
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Playa Playa"]
+visible = false
+shape = SubResource( 1 )
+>>>>>>> ab92a1f0515c7e821623392d4acad7e2e0eae83d
